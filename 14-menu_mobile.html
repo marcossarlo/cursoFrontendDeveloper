@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Clase: 14/22 | Menú mobile</title>
+    <!-- Es momento de crear el menú de navegación para la versión móvil o responsive de nuestra tienda virtual y esta estructura presenta tres listas con distintas opciones. Recuerda que configurar esta versión del sitio ayuda a que pueda fluir mejor en todos los tamaños de pantalla y ahorra tiempo porque no necesitas tener dos versiones de un sitio web. -->
+    <style>
+        :root {
+            /* DEFINIENDO COLORES BASE */
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c9c8c8;
+            --text-input-file: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0px;
+        }
+        .mobile-menu {
+            padding: 24px;
+        }
+            .mobile-menu a {
+                text-decoration: none;
+                color: var(--black);
+                font-weight: bold;
+            }
+            .mobile-menu ul {
+                padding: 0;
+                margin: 24px 0 0;
+                list-style: none;
+            }
+            .mobile-menu ul:nth-child(2) {
+                border-bottom: 1px solid var(--very-light-pink);
+            }
+            /* para ubicar el 3er. ul en la parte inferior*/
+            .mobile-menu ul:nth-child(4) {
+                position: absolute; 
+                bottom: 0;
+            }
+            .mobile-menu ul li {
+                margin-bottom: 24px;
+            }
+            .mobile-menu .email {
+                font-size: var(--sm);
+                font-weight: 300;
+            }
+            .mobile-menu .sign-out {
+                font-size: var(--sm);
+                color: var(--hospital-green);
+            }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <h3>CATEGORIES</h3>
+        <ul>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">PCs</a></li>
+            <li><a href="#">PCs Gamers</a></li>
+            <li><a href="#">Periféricos</a></li>
+            <li><a href="#">Componentes</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">My orders</a></li>
+            <li><a href="#">My account</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="email">email@platzi.com</a></li>
+            <li><a href="#" class="sign-out">Sign out</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
